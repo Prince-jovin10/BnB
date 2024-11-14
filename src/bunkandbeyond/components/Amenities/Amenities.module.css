@@ -1,0 +1,99 @@
+.amenitiesSection {
+  width: 100%;
+  max-width: 1440px;
+  padding: 60px 40px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  text-align: left;
+  position: relative;
+  z-index: 2;
+}
+
+.title {
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #ffffff;
+}
+
+.amenitiesContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 30px;
+  padding: 40px;
+  background-color: #fafafa;
+  border-radius: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.amenitiesContainer::before {
+  content: '';
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+  bottom: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+.amenity {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #333;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+}
+
+.amenity:hover {
+  transform: translateY(-5px);
+}
+
+.amenity p {
+  font-size: 22px;
+  margin: 10px 0 0;
+  text-align: center;
+  font-weight: 500;
+}
+
+.amenity img {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+}
+
+@media (max-width: 1440px) {
+  .title {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .amenitiesContainer {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+  }
+  .amenity img {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .amenitiesSection {
+    padding: 40px 20px;
+  }
+  .title {
+    font-size: 28px;
+  }
+  .amenity p {
+    font-size: 0.9rem;
+  }
+}

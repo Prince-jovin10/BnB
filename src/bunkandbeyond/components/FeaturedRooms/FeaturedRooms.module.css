@@ -1,0 +1,138 @@
+.container {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .header {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 20px;
+    color: #000000;
+    padding: 7px;
+  }
+  
+  .gallery {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .imageContainer {
+    width: 30%;
+  }
+  
+  .imageContainer img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  
+  .viewMore {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .options {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .option h3{
+    font-size: 35px;
+  }
+
+  .option p{
+    font-size: 24px;
+  }
+  .option {
+    border: #000000 solid 3px ;
+    background-color: #ffffff;
+    color: #000000;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    padding: 15px;
+    width: 45%;
+    margin-bottom: 20px;
+  }
+  
+  .price {
+    font-weight: bold;
+    color: #838282;
+    font-size: 34px;
+  }
+  
+  .features {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: #293ab9;
+  }
+  
+  
+  @media (max-width: 1440px) {
+    .header h2{
+      font-size: 35px;
+    }
+    .gallery {
+      gap: 15px;
+    }
+  
+    .imageContainer {
+      width: 45%;
+    }
+    .price{
+      font-size: 34px;
+    }
+  
+    .options {
+      gap: 7px;
+      padding: 5px;
+    }
+  
+    .option {
+      width: 40%;
+    }
+  }
+  
+  @media (max-width: 1024px) {
+    .imageContainer {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .options {
+      flex-direction: row;
+      align-items: center;
+    }
+  
+    .option {
+      width: 70%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 15px;
+    }
+  
+    .option {
+      width: 100%;
+    }
+  
+    .button {
+      padding: 8px 12px;
+    }
+  }
+  

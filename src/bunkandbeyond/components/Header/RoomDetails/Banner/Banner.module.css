@@ -1,0 +1,189 @@
+.banner {
+  position: relative;
+  background: url('../../../../assets/roomdetails/banner/background.png') no-repeat center center/cover;
+  color: #ffffff;
+  text-align: center;
+  padding: 100px 15px; 
+}
+
+.content {
+  max-width: 800px;
+  width: 100%; 
+  height: 100%;
+ margin-left: 88px;
+  padding: 20px;
+  text-align: left;
+}
+
+.title {
+  font-size: 35px;
+  font-weight: 400;
+  line-height: 1.2;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif  ;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.brandName {
+  font-weight: bold;
+  font-size: 35px;
+}
+
+.subtitle {
+  font-size:24px;
+  font-weight: 300;
+  text-align: left;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.exploreButton {
+  background-color: #ffffff;
+  color: #000;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.exploreButton:hover {
+  background-color: #f0f0f0;
+}
+
+.footer {
+  display: flex;
+  justify-content:space-around  ;
+  background-color: #ffffff;
+  color: #000;
+  width: 100%;
+  max-width: 1440px;
+  padding: 0px ;
+  border-top: 1px solid #ddd;
+ margin-bottom: 0px;
+}
+.whatsappIcon img{
+  width: 50px;
+  height: 50px;
+  padding-top: 15px;
+}
+.infowhatsapp{
+  border-radius: 7px;
+  background-color: #6E936C;
+
+  width: 330px;
+  color: white;
+}
+.infowhatsapp p{
+ color: white;
+}
+.phoneIcon img {
+  width: 50px;
+  height: 50px;
+  padding-top: 15px;
+}
+
+.icon img{
+  width: 50px;
+  height: 50px;
+  padding-top: 15px;
+}
+
+@media (max-width: 1440px) {
+  .content {
+    max-width: 700px;
+    padding: 15px;
+  }
+
+  .title {
+    font-size: 35px;
+  }
+
+  .brandName {
+    font-size: 35px;
+  }
+
+  .subtitle {
+    font-size:24px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .content {
+    max-width: 600px;
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 33px;
+  }
+
+  .brandName {
+    font-size: 33px;
+  }
+
+  .subtitle {
+    font-size: 22px;
+  }
+
+  .exploreButton {
+    padding: 8px 18px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .content {
+    max-width: 500px;
+    padding: 10px;
+  }
+
+  .title {
+    font-size: 1.6rem;
+  }
+
+  .brandName {
+    font-size: 2rem;
+  }
+
+  .subtitle {
+    font-size: 0.75rem;
+  }
+
+  .exploreButton {
+    padding: 7px 15px;
+  }
+
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner {
+    padding: 80px 10px;
+  }
+
+  .content {
+    max-width: 100%;
+    padding: 5px;
+  }
+
+  .title {
+    font-size: 1.4rem;
+  }
+
+  .brandName {
+    font-size: 1.8rem;
+  }
+
+  .subtitle {
+    font-size: 0.7rem;
+  }
+
+  .exploreButton {
+    padding: 6px 12px;
+  }
+}
