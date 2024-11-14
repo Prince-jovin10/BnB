@@ -155,3 +155,44 @@
     font-size: 1.6rem;
   }
 }
+@media (max-width: 600px) and (min-width: 400px) {
+  .roomsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .roomCard {
+    height: 600px;
+  }
+
+  .title {
+    font-size: 1.0rem;
+  }
+}
+
+@media (max-width: 399px) and (min-width: 350px) {
+  .roomsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .roomCard {
+    height: 480px;
+  }
+
+  .title {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 349px) and (min-width: 240px) {
+  .roomsGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .roomCard {
+    height: 360px;
+  }
+
+  .title {
+    font-size: 1.2rem;
+  }
+}

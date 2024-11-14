@@ -1,138 +1,372 @@
 .container {
-    padding: 20px;
-    background-color: #f9f9f9;
-  }
-  
-  .header {
-    text-align: center;
+  padding: 20px;
+  background-color: #f9f9f9;
+}
+
+.header {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 20px;
+  color: #000000;
+  padding: 7px;
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.imageContainer {
+  width: 30%;
+}
+
+.imageContainer img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.viewMore {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.options {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.option h3 {
+  font-size: 35px;
+}
+
+.option p {
+  font-size: 24px;
+}
+
+.option {
+  border: #000000 solid 3px;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 10px;
+  padding: 15px;
+  width: 45%;
+  margin-bottom: 20px;
+}
+
+.price {
+  font-weight: bold;
+  color: #838282;
+  font-size: 34px;
+}
+
+.features {
+  list-style-type: none;
+  padding: 0;
+}
+
+.button {
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button:hover {
+  background-color: #293ab9;
+}
+
+@media (min-width: 1024px) and (max-width: 1440px) {
+  .header h2 {
     font-size: 35px;
-    margin-bottom: 20px;
-    color: #000000;
-    padding: 7px;
   }
-  
   .gallery {
-    display: flex;
-    justify-content: space-around;
-    margin-bottom: 20px;
-    flex-wrap: wrap;
-  }
-  
-  .imageContainer {
-    width: 30%;
-  }
-  
-  .imageContainer img {
-    width: 100%;
-    border-radius: 8px;
-  }
-  
-  .viewMore {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .options {
-    display: flex;
-    gap: 10px;
-    justify-content: space-between;
-    flex-wrap: wrap;
-  }
-  .option h3{
-    font-size: 35px;
+    gap: 15px;
   }
 
-  .option p{
-    font-size: 24px;
-  }
-  .option {
-    border: #000000 solid 3px ;
-    background-color: #ffffff;
-    color: #000000;
-    border: 2px solid #000000;
-    border-radius: 10px;
-    padding: 15px;
+  .imageContainer {
     width: 45%;
-    margin-bottom: 20px;
   }
-  
+
   .price {
-    font-weight: bold;
-    color: #838282;
     font-size: 34px;
   }
-  
-  .features {
-    list-style-type: none;
-    padding: 0;
+
+  .options {
+    gap: 7px;
+    padding: 5px;
   }
-  
+
+  .option {
+    width: 40%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .imageContainer {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .options {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .option {
+    width: 70%;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  .option {
+    width: 100%;
+  }
+
   .button {
-    background-color: #000000;
-    color: white;
-    border: none;
-    padding: 10px 15px;
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+
+  .gallery {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .imageContainer {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+
+  .option h3 {
+    font-size: 24px;
+  }
+
+  .option p {
+    font-size: 16px;
+  }
+
+  .option {
+    width: 90%;
+    padding: 10px;
+  }
+
+  .price {
+    font-size: 20px;
+  }
+
+  .button {
+    padding: 7px 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    padding: 10px;
+  }
+
+  .header {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .option h3 {
+    font-size: 20px;
+  }
+
+  .option p {
+    font-size: 14px;
+  }
+
+  .option {
+    width: 100%;
+    padding: 8px;
+  }
+
+  .price {
+    font-size: 18px;
+  }
+
+  .button {
+    padding: 5px 8px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 600px) and (min-width: 401px) {
+  .container {
+    padding: 12px;
+  }
+
+  .header {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+
+  .gallery {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .imageContainer {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+
+  .option h3 {
+    font-size: 22px;
+  }
+
+  .option p {
+    font-size: 14px;
+  }
+
+  .option {
+    width: 85%;
+    padding: 10px;
+  }
+
+  .price {
+    font-size: 18px;
+  }
+
+  .button {
+    padding: 6px 10px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 400px) and (min-width: 351px) {
+  .container {
+    padding: 10px;
+  }
+
+  .header {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+
+  .imageContainer img {
     border-radius: 5px;
-    cursor: pointer;
   }
-  
-  .button:hover {
-    background-color: #293ab9;
+
+  .option h3 {
+    font-size: 18px;
   }
-  
-  
-  @media (max-width: 1440px) {
-    .header h2{
-      font-size: 35px;
-    }
-    .gallery {
-      gap: 15px;
-    }
-  
-    .imageContainer {
-      width: 45%;
-    }
-    .price{
-      font-size: 34px;
-    }
-  
-    .options {
-      gap: 7px;
-      padding: 5px;
-    }
-  
-    .option {
-      width: 40%;
-    }
+
+  .option p {
+    font-size: 12px;
   }
-  
-  @media (max-width: 1024px) {
-    .imageContainer {
-      width: 100%;
-      margin-bottom: 20px;
-    }
-  
-    .options {
-      flex-direction: row;
-      align-items: center;
-    }
-  
-    .option {
-      width: 70%;
-    }
+
+  .option {
+    width: 90%;
+    padding: 8px;
   }
-  
-  @media (max-width: 768px) {
-    .container {
-      padding: 15px;
-    }
-  
-    .option {
-      width: 100%;
-    }
-  
-    .button {
-      padding: 8px 12px;
-    }
+
+  .price {
+    font-size: 16px;
   }
-  
+
+  .button {
+    padding: 5px 8px;
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 350px) and (min-width: 241px) {
+  .container {
+    padding: 8px;
+  }
+
+  .header {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .gallery {
+    gap: 5px;
+  }
+
+  .imageContainer {
+    margin-bottom: 8px;
+  }
+
+  .option h3 {
+    font-size: 16px;
+  }
+
+  .option p {
+    font-size: 11px;
+  }
+
+  .option {
+    width: 95%;
+    padding: 6px;
+  }
+
+  .price {
+    font-size: 14px;
+  }
+
+  .button {
+    padding: 4px 6px;
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 240px) {
+  .container {
+    padding: 5px;
+  }
+
+  .header {
+    font-size: 18px;
+    margin-bottom: 5px;
+  }
+
+  .gallery {
+    gap: 3px;
+  }
+
+  .imageContainer {
+    margin-bottom: 5px;
+  }
+
+  .option h3 {
+    font-size: 14px;
+  }
+
+  .option p {
+    font-size: 10px;
+  }
+
+  .option {
+    width: 90%;
+    padding: 5px;
+  }
+
+  .price {
+    font-size: 12px;
+  }
+
+  .button {
+    padding: 3px 5px;
+    font-size: 0.7rem;
+  }
+}
+

@@ -20,15 +20,18 @@ const Banner = () => {
         <button className={styles.exploreButton}>Explore</button>
       </div>
       <div className={styles.footer}>
-        <div className={styles.info}>
+        <div className={styles.infoclock}>
           <span className={styles.icon}><img src={clock} alt="" /></span>
           <p>24/7 Access</p>
         </div>
         <div className={styles.infowhatsapp}>
-          <span className={styles.whatsappIcon}><img src={whatsapp} alt="" /></span>
+          
+          <div className={styles.whatsappIcon}><img src={whatsapp} alt="" /></div>
+          <div className={styles.whatsappText}>
           <p>WhatsApp</p>
+          </div>
         </div>
-        <div className={styles.info}>
+        <div className={styles.infophone}>
           <span className={styles.phoneIcon}><img src={phone}/></span>
           <p>+91 8309047176</p>
         </div>
