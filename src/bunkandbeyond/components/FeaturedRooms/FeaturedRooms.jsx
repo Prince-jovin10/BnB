@@ -20,15 +20,19 @@ const FeaturedRooms = () => {
           <img src={Room2} alt="Room 2" />
         </div>
         <div className={styles.imageContainer}>
-          <img src={Room3} alt="Room 3" />
+          <img src={Room3} alt="Room 3" />g
         </div>
          <div className={styles.imageContainer}>
           <img src={Room4} alt="Room 4" />
         </div> 
       </div>
-      <div className={styles.viewMore}>
+      {/* <div className={styles.viewMore}>
         <a href="#">View More</a>
-      </div>
+      </div> */}
+      <div className={styles.headercomponent}>
+      <div className={styles.header1}>
+              <h3>Pricing Plans</h3>
+          </div>
       <div className={styles.options}>
         <div className={styles.option}>
           <h3>Invest with Us</h3>
@@ -43,11 +47,9 @@ const FeaturedRooms = () => {
           </ul>
           <button className={styles.button1}>Contact Us</button>
         </div>
-        <div className={styles.headercomponent}>
-          <div className={styles.header1}>
-              <h3>Pricing Plans</h3>
-          </div>
-        </div>
+        
+         
+        
         <div className={styles.option}>
           <h3>Rent with Us</h3>
           <p>
@@ -63,7 +65,7 @@ const FeaturedRooms = () => {
            <button className={styles.button2}>Book Now</button>
           </div>
         </div>
-
+        </div>
       </div>
     </div>
   );

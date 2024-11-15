@@ -68,6 +68,13 @@
   padding: 0;
 }
 
+.header1 h3{
+  font-size:35px ;
+  color: black;
+  padding: 25px;
+}
+
+
 .button {
   background-color: #000000;
   color: white;

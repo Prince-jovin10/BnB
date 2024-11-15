@@ -35,29 +35,41 @@
   color: white;
 } */
 
-.contact {
+.contact h3 {
   display: flex;
   color:white;
   font-size: 23px;
   text-align:center ;
   flex-direction: column;
   flex-wrap: wrap;
-  padding: 25px;
-  
+ 
 }
-
-.address {
+.contact p{
+  color: white;
+  font-size: 20px;
+}
+.address h3 {
   display: flex;
+  color:white;
   font-size: 23px;
+  text-align:center ;
   flex-direction: column;
   flex-wrap: wrap;
-  padding: 25px;
+  
+}
+.address {
+  display: flex;
+ 
+  flex-direction: column;
+  flex-wrap: wrap;
   max-width: 280px;
   
 }
 .address p{
   color: white;
   font-size: 20px;
+  padding: 0px;
+  margin: 0px;
 }
 .social {
   display: flex;
@@ -66,6 +78,7 @@
   justify-content: center;
   align-items: center;
   gap: 15px;
+  padding-right: 15px;
   
 }
 .socialinfo{
