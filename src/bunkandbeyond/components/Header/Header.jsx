@@ -1,16 +1,17 @@
 import React, { useState } from 'react';
 import styles from './Header.module.css';
 import Logo from '../../assets/icon/Logo.png';
-import Banner from './RoomDetails/Banner/Banner.jsx';
-import OurRooms from './RoomDetails/OurRooms/OurRooms.jsx';
+// import Banner from './RoomDetails/Banner/Banner.jsx';
+// import OurRooms from './RoomDetails/OurRooms/OurRooms.jsx';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
-  const [showRoomDetails, setShowRoomDetails] = useState(false);
+  // const [showRoomDetails, setShowRoomDetails] = useState(false);
 
  
-  const handleRoomDetailsClick = () => {
-    setShowRoomDetails(!showRoomDetails);
-  };
+  // const handleRoomDetailsClick = () => {
+  //   setShowRoomDetails(!showRoomDetails);
+  // };
 
   return (
     <>
@@ -21,13 +22,17 @@ const Header = () => {
         <nav className={styles.nav}>
           <ul>
             <li>
-              <a href="#">Home</a>
+              <Link to ='/'> Home
+              </Link>
+              {/* <a href="#">Home</a> */}
             </li>
             <li>
-             
-              <a href="#" onClick={handleRoomDetailsClick}>
+             <Link to ='/roomdetails'>
+               Room Details
+             </Link>
+              {/* <a href="#" onClick={handleRoomDetailsClick}>
                 Room Details
-              </a>
+              </a> */}
             </li>
             <li>
               <a href="#">Contact us</a>
@@ -37,12 +42,12 @@ const Header = () => {
       </header>
 
       
-      {showRoomDetails && (
+      {/* {showRoomDetails && (
         <div>
           <Banner />
           <OurRooms />
         </div>
-      )}
+      )} */}
     </>
   );
 };
