@@ -12,7 +12,7 @@ const BannerSection = () => {
           <h1>INDULGE IN</h1>
           <h1>PRESTIGIOUS</h1>
           <h1>RESIDENCIES</h1>
-          <p>Escape the ordinary;<br/> embrace the extraordinary <br/>at Bunk and Beyond.</p>
+          <p>Escape the ordinary<br/> embrace the extraordinary <br/>at Bunk and Beyond.</p>
           <button className={styles.getStartedBtn}>Get Started</button>
         </div>
         <div className={styles.bannerImage}>
