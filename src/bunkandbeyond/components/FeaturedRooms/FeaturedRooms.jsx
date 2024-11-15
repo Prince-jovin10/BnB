@@ -20,7 +20,7 @@ const FeaturedRooms = () => {
           <img src={Room2} alt="Room 2" />
         </div>
         <div className={styles.imageContainer}>
-          <img src={Room3} alt="Room 3" />g
+          <img src={Room3} alt="Room 3" />
         </div>
          <div className={styles.imageContainer}>
           <img src={Room4} alt="Room 4" />

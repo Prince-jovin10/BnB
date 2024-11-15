@@ -8,13 +8,19 @@ import UpcomingProjects from '../bunkandbeyond/components/UpcomingProjects/Upcom
 import GetInTouch from '../bunkandbeyond/components/GetInTouch/GetInTouch'
 import Location from '../bunkandbeyond/components/Location/Location'
 import Footer from '../bunkandbeyond/components/Footer/Footer'
+import MobileHeader from '../bunkandbeyond/components/MobileHeader/MobileHeader'
+import { useMediaQuery } from 'react-responsive'
 
 const Home = () => {
+
+    const isMobile = useMediaQuery({ query: '(max-width: 800px)' })
+
   return (
     <div>
-      <Header />
+     {isMobile ?<MobileHeader/> :  <Header />}
       <BannerSection/>
-      <AboutUs/>
+      <AboutUs/> 
+      
      <Amenities/> 
      <FeaturedRooms/>
      <UpcomingProjects/>

@@ -75,7 +75,16 @@
 }
 
 
-.button {
+.button1{
+  background-color: #000000;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.button2{
   background-color: #000000;
   color: white;
   border: none;
