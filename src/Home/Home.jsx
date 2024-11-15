@@ -12,21 +12,38 @@ import MobileHeader from '../bunkandbeyond/components/MobileHeader/MobileHeader'
 import { useMediaQuery } from 'react-responsive'
 
 const Home = () => {
-
-    const isMobile = useMediaQuery({ query: '(max-width: 800px)' })
-
+  const isMobile = useMediaQuery({ query: '(max-width: 800px)' })
   return (
     <div>
-     {isMobile ?<MobileHeader/> :  <Header />}
+   {isMobile ?<MobileHeader/> :  <Header />}
       <BannerSection/>
-      <AboutUs/> 
-      
+      <AboutUs/>       <div>
+      <Header />
+      </div>
+      <div>
+      <BannerSection/>
+      </div>
+      <div>
+      <AboutUs/>
+      </div>
+      <div>
      <Amenities/> 
+     </div>
+     <div>
      <FeaturedRooms/>
+     </div>
+     <div>
      <UpcomingProjects/>
+     </div>
+     <div>
      <GetInTouch/>
+     </div>
+     <div>
      <Location/>
+     </div>
+     <div>
      <Footer/>
+     </div>
     </div>
   )
 }
