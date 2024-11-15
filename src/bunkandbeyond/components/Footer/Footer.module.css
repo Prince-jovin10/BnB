@@ -19,21 +19,21 @@
 .logo {
   text-align: center;
   margin-bottom: 15px;
+  padding: 10px;
 }
 
 .logo img {
-  width: 100px;
-  height: auto;
-  background-color: white;
-  padding: 15px;
-  border-radius: 30px;
+  width: 100%;
+  max-width: 350px;
+  height:250px;
+  
 }
 
-.tagline {
+/* .tagline {
   font-size: 1rem;
   margin-top: 10px;
   color: white;
-}
+} */
 
 .contact {
   display: flex;
@@ -61,10 +61,16 @@
 }
 .social {
   display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 15px;
   
+}
+.socialinfo{
+  display: flex;
+  flex-direction: column;
 }
 
 .social a {
@@ -82,8 +88,26 @@
   color: white;
   font-size: 23px;
 }
+.socialinfo{
+  display: flex;
+  flex-direction: row;
+  gap:15px;
 
-@media (max-width: 1440px) {
+}
+.logo1 img{
+ width: 50px;
+ height: 50px;
+ border-radius: 25px;
+ background-color: white;
+}
+.logo2 img{
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255);
+ }
+
+@media (max-width: 1920px) {
   .container {
     flex-wrap: wrap;
   }
@@ -125,5 +149,83 @@
 
   .social {
     gap: 10px;
+  }
+}
+@media (max-width: 600px) {
+  .footer {
+    padding: 20px 10px;
+  }
+
+  .logo img {
+    width:100%;
+    height: 70%;
+  }
+
+  .contact, .address {
+    padding: 5px;
+  }
+
+  .social {
+    gap: 8px;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer {
+    padding: 15px 5px;
+  }
+
+  .logo img {
+    width:100%;
+    height: 80%;
+  }
+
+  .contact, .address {
+    font-size: 18px;
+    padding: 10px;
+  }
+
+  .social a {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 350px) {
+  .footer {
+    padding: 10px 5px;
+  }
+
+  .logo img {
+    width:90%;
+    height: 80%;
+  }
+
+  .contact, .address {
+    font-size: 18px;
+    padding: 5px;
+  }
+
+  .social a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 240px) {
+  .footer {
+    padding: 5px 2px;
+  }
+
+  .logo img {
+    width:80%;
+    height: 70%;
+  }
+
+  .contact, .address {
+    font-size: 16px;
+    padding: 2px;
+  }
+
+  .social a {
+    font-size: 12px;
   }
 }

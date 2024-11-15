@@ -1,5 +1,8 @@
 import styles from './Footer.module.css';
-import Icon from '../../assets/icon/logo.png';
+import Icon from '../../assets/icon/bnb.png';
+import whatsapp from '../../assets/roomdetails/banner/whatsappicon.png';
+import instagram from '../../assets/roomdetails/banner/instagram.png';
+
 
 const Footer = () => {
   return (
@@ -7,7 +10,7 @@ const Footer = () => {
       <div className={styles.container}>
         <div className={styles.logo}>
           <img src={Icon} alt="Bunk Beyond Logo" />
-          <p className={styles.tagline}>YOUR HOME AWAY FROM HOME</p>
+          {/* <p className={styles.tagline}>YOUR HOME AWAY FROM HOME</p> */}
         </div>
         <div className={styles.contact}>
           <h3>Contact Us</h3>
@@ -21,13 +24,18 @@ const Footer = () => {
           </p>
         </div>
         <div className={styles.social}>
+          
           <h3>Follow us at</h3>
-          <a href="#">
-            <i className="fab fa-whatsapp"></i>
-          </a>
-          <a href="#">
-            <i className="fab fa-instagram"></i>
-          </a>
+          <div className={styles.socialinfo}>
+            <div className={styles.logo1}>
+            <img src={whatsapp}/>
+            </div>
+            <div className={styles.logo2}>
+            <img src={instagram}/>
+            </div>
+            
+         
+          </div>
         </div>
       </div>
       

@@ -22,9 +22,9 @@ const FeaturedRooms = () => {
         <div className={styles.imageContainer}>
           <img src={Room3} alt="Room 3" />
         </div>
-        {/* <div className={styles.imageContainer}>
+         <div className={styles.imageContainer}>
           <img src={Room4} alt="Room 4" />
-        </div> */}
+        </div> 
       </div>
       <div className={styles.viewMore}>
         <a href="#">View More</a>

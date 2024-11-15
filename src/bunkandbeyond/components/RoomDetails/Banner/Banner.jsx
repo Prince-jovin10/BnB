@@ -20,7 +20,7 @@ const Banner = () => {
         </p>
         <button className={styles.exploreButton}>Explore</button>
       </div>
-      <div className={styles.footer}>
+      {/* <div className={styles.footer}>
         <div className={styles.infoclock}>
           <span className={styles.icon}><img src={clock} alt="" /></span>
           <p>24/7 Access</p>
@@ -36,7 +36,7 @@ const Banner = () => {
           <span className={styles.phoneIcon}><img src={phone}/></span>
           <p>+91 8309047176</p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };

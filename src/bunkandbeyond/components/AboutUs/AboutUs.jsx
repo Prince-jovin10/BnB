@@ -22,7 +22,7 @@ const AboutUs = () => {
         <p className={styles.description}>
           Bunk and Beyond is redefining the hostel experience for young men with our luxury hostel concept. Situated in the heart of Banjara Hills, Hyderabad, we combine comfort, style, and convenience to offer an unparalleled stay. From premium amenities to a welcoming community, we aim to provide a space that feels like home.
         </p>
-        <button className={styles.learnMoreButton}>Learn more →</button>
+        <button className={styles.learnMoreButton}>Contact Us →</button>
       </div>
     </div>
   );
