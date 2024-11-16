@@ -11,7 +11,7 @@ import Footer from '../bunkandbeyond/components/Footer/Footer'
 import MobileHeader from '../bunkandbeyond/components/MobileHeader/MobileHeader'
 import { useMediaQuery } from 'react-responsive'
 import Style from './Home.module.css'
-
+import MobileBanner from '../bunkandbeyond/components/MobileBanner/MobileBanner'
 
 const Home = () => {
 
@@ -20,15 +20,15 @@ const Home = () => {
   return (
     <div className={Style.main}>
      {isMobile ?<MobileHeader/> :  <Header />}
-      <BannerSection/>
-      <AboutUs/> 
-      
-     <Amenities/> 
+      {/* <BannerSection/>
+      <AboutUs/>  */}
+      <MobileBanner/>
+     {/* <Amenities/> 
      <FeaturedRooms/>
      <UpcomingProjects/>
      <GetInTouch/>
      <Location/>
-     <Footer/>
+     <Footer/> */}
     </div>
   )
 }
