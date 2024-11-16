@@ -3,8 +3,13 @@ import Icon from '../../assets/icon/bnb.png';
 import whatsapp from '../../assets/roomdetails/banner/whatsappicon.png';
 import instagram from '../../assets/roomdetails/banner/instagram.png';
 
+import { Link } from 'react-router-dom';
+
 
 const Footer = () => {
+
+  const whatsappNumber = 8309047176
+
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
@@ -28,10 +33,22 @@ const Footer = () => {
           <h3>Follow us at</h3>
           <div className={styles.socialinfo}>
             <div className={styles.logo1}>
+            <Link
+                to={`https://wa.me/${whatsappNumber}`}
+                target="_blank"
+                rel="noopener noreferrer"
+              > 
             <img src={whatsapp}/>
+            </Link>
             </div>
             <div className={styles.logo2}>
+            <Link
+                to={`https://www.instagram.com/bunknbeyondbnb/`}
+                target="_blank"
+                rel="noopener noreferrer"
+              >  
             <img src={instagram}/>
+            </Link>
             </div>
             
          

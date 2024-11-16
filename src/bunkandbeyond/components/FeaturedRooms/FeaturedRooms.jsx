@@ -5,6 +5,9 @@ import Room2 from '../../assets/rooms/room2.jpg';
 import Room3 from '../../assets/rooms/room3.jpg';
 import Room4 from '../../assets/rooms/room4.jpg';
 
+import { Link as ScrollLink } from "react-scroll";
+
+
 
 const FeaturedRooms = () => {
   return (
@@ -45,7 +48,9 @@ const FeaturedRooms = () => {
             <li>✔ Property management included</li>
             <li>✔ Complimentary Stays</li>
           </ul>
+          <ScrollLink to="contact" smooth={true} duration={1000}>
           <button className={styles.button1}>Contact Us</button>
+          </ScrollLink>
         </div>
         
          
@@ -62,7 +67,9 @@ const FeaturedRooms = () => {
             <li>✔ Daily housekeeping</li>
           </ul>
           <div>
+          <ScrollLink to="contact" smooth={true} duration={1000}>
            <button className={styles.button2}>Book Now</button>
+          </ScrollLink>
           </div>
         </div>
         </div>

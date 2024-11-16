@@ -3,6 +3,7 @@ import styles from './BannerSection.module.css';
 import Banner1 from '../../assets/banner/banner1.png';
 import Banner2 from '../../assets/banner/banner2.jpg';
 
+import { Link as ScrollLink } from "react-scroll";
 
 const BannerSection = () => {
   return (
@@ -13,7 +14,9 @@ const BannerSection = () => {
           <h1>PRESTIGIOUS</h1>
           <h1>RESIDENCIES</h1>
           <p>Escape the ordinary<br/> embrace the extraordinary <br/>at Bunk and Beyond.</p>
+          <ScrollLink to="about" smooth={true} duration={1000}>
           <button className={styles.getStartedBtn}>Get Started</button>
+          </ScrollLink>
         </div>
         <div className={styles.bannerImage}>
           <img src={Banner1} alt="Luxury sofa in a modern living room" />

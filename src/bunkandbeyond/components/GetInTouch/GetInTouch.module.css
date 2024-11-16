@@ -75,16 +75,17 @@ textarea {
 
 .checkbox {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  /* align-items: center;
+  justify-content: center; */
   margin-bottom: 30px;
   font-size: 0.9rem;
   color: #666;
   background-color: white;
 }
 
-.checkbox input {
-  margin-right: 10px;
+.input {
+  padding-left: 1vw;
+  margin-right: 1px;
   color: #e8e8e8;
 }
 
@@ -95,6 +96,11 @@ textarea {
 
 .checkbox a:hover {
   text-decoration: underline;
+}
+
+.label{
+  
+  padding-left: 0vw;
 }
 
 .button {

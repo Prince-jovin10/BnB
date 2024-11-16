@@ -5,6 +5,8 @@ import whatsapp from '../../../assets/roomdetails/banner/whatsapp.png';
 import phone from '../../../assets/roomdetails/banner/phone.png';
 import clock from '../../../assets/roomdetails/banner/clock.png';
 
+import { Link as ScrollLink } from "react-scroll";
+
 
 const Banner = () => {
   return (
@@ -18,7 +20,11 @@ const Banner = () => {
         <p className={styles.subtitle}>
           Why compromise? Elevate your stay with premium living at Bunk and Beyond.
         </p>
+
+        <ScrollLink to="rooms" smooth={true} duration={1000}>
         <button className={styles.exploreButton}>Explore</button>
+        </ScrollLink>
+
       </div>
       {/* <div className={styles.footer}>
         <div className={styles.infoclock}>
