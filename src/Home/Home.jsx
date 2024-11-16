@@ -10,29 +10,20 @@ import Location from '../bunkandbeyond/components/Location/Location'
 import Footer from '../bunkandbeyond/components/Footer/Footer'
 import MobileHeader from '../bunkandbeyond/components/MobileHeader/MobileHeader'
 import { useMediaQuery } from 'react-responsive'
+import Style from './Home.module.css'
+import MobileBanner from '../bunkandbeyond/components/MobileBanner/MobileBanner'
 
 import { Element } from "react-scroll";
 
 const Home = () => {
   const isMobile = useMediaQuery({ query: '(max-width: 800px)' })
   return (
-    <div>
-   {isMobile ?<MobileHeader/> :  <Header />}
-      
-      <div>
-      <BannerSection/>
-      </div>
-
-      <Element name='about'>
-      <div>
-      <AboutUs/>
-      </div>
-      </Element>
-
-      <div>
-     <Amenities/> 
-     </div>
-     <div>
+    <div className={Style.main}>
+     {isMobile ?<MobileHeader/> :  <Header />}
+      {/* <BannerSection/>
+      <AboutUs/>  */}
+      <MobileBanner/>
+     {/* <Amenities/> 
      <FeaturedRooms/>
      </div>
      <div>
@@ -50,8 +41,8 @@ const Home = () => {
      </div>
      <div>
      <Footer/>
-     </div>
-    </div>
+     </div>*/}
+    </div> 
   )
 }
 

@@ -56,9 +56,15 @@ const UpcomingProjects = () => {
   return (
     <>
      <h2 className={styles.heading}>Coming Soon</h2>
+<<<<<<< HEAD
     <div className={styles.container} ref={containerRef}>
      
       <div className={styles.projects} >
+=======
+    <div className={styles.container}>
+     
+      <div className={styles.projects}>
+>>>>>>> 4acf6a7e81066e59f7c41c9b6e7f50ee6c38f3bb
         <div className={styles.project}>
           <img src={Delhi} alt="Delhi" className={styles.image} />
           <p className={styles.name}>Delhi</p>
@@ -80,6 +86,7 @@ const UpcomingProjects = () => {
           <p className={styles.name}>Pune</p>
         </div>
       </div>
+<<<<<<< HEAD
 
      
 
@@ -105,6 +112,14 @@ const UpcomingProjects = () => {
           />
         </div>
 
+=======
+      
+    </div>
+    <div className={styles.arrow}>
+        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M14.3 8.3L10.3 12.3L10.3 4.3" stroke="#626262" strokeWidth="2"/>
+        </svg>
+>>>>>>> 4acf6a7e81066e59f7c41c9b6e7f50ee6c38f3bb
       </div>
     </>
   );
