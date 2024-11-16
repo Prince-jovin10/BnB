@@ -1,3 +1,14 @@
+
+
+.footer h3{
+  font-family: Montserrat;
+}
+
+.footer p{
+  font-family: Poppins;
+}
+
+
 .footer {
   background-color: #000000;
   color: #fff;
@@ -26,6 +37,7 @@
   width: 100%;
   max-width: 350px;
   height:250px;
+  cursor: pointer;
   
 }
 
@@ -36,6 +48,7 @@
 } */
 
 .contact h3 {
+  font-family: Montserrat;
   display: flex;
   color:white;
   font-size: 23px;
@@ -45,6 +58,7 @@
  
 }
 .contact p{
+  font-family: Poppins;
   color: white;
   font-size: 20px;
 }

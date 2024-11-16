@@ -14,10 +14,12 @@ import Style from "./Home.module.css";
 import MobileBanner from "../bunkandbeyond/components/MobileBanner/MobileBanner";
 
 import { Element } from "react-scroll";
+import ScrollToTop from "../bunkandbeyond/components/ScrollToTop/ScrollToTop";
 
 const Home = () => {
   const isMobile = useMediaQuery({ query: "(max-width: 800px)" });
   return (
+    <ScrollToTop>
     <div className={Style.main}>
       <div>{isMobile ? <MobileHeader /> : <Header />}</div>
 
@@ -53,6 +55,7 @@ const Home = () => {
         <Footer />
       </div>
     </div>
+    </ScrollToTop>
   );
 };
 

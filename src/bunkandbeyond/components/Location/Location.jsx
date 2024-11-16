@@ -7,7 +7,7 @@ import Map from '../../assets/map/map.png';
 const Location = () => {
   return (
     <div className={styles.container}>
-      <h3 className={styles.title}>Location</h3>
+      <h3 className={styles.loc}>Location</h3>
       <div className={styles.mapContainer}>
         <img
           className={styles.mapImage}

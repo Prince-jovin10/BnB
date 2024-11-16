@@ -4,6 +4,7 @@
 }
 
 .title {
+  font-family: Montserrat;
   font-size: 2.2rem;
   font-weight: bold;
   margin-bottom: 20px;
@@ -79,6 +80,7 @@
 }
 
 .roomName {
+  font-family: Poppins;
   font-size: 1.4rem;
   font-weight: 600;
   margin-bottom: 10px;
@@ -98,6 +100,7 @@
 }
 
 .feature {
+  font-family: Poppins;
   font-size: 0.95rem;
   color: #555;
   display: flex;

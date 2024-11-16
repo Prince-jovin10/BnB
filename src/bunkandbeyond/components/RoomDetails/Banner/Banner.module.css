@@ -21,7 +21,7 @@
   font-size: 35px;
   font-weight: 400;
   line-height: 1.2;
-  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-family: Montserrat;
   text-align: left;
   margin-bottom: 10px;
 }
@@ -35,7 +35,7 @@
   font-size: 24px;
   font-weight: 300;
   text-align: left;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Poppins;
   color: white;
   margin-bottom: 20px;
 }

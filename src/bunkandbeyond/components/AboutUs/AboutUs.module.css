@@ -34,13 +34,14 @@
 
 .title {
   font-size: 35px;
-  
+  font-family: Montserrat;
   font-weight: bold;
   margin-bottom: 15px;
   color: #000;
 }
 
 .description {
+  font-family: Poppins;
   font-size: 24px;
   line-height: 1.6;
   color: #555;

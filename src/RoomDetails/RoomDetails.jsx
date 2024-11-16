@@ -7,10 +7,12 @@ import MobileHeader from '../bunkandbeyond/components/MobileHeader/MobileHeader'
 import { useMediaQuery } from 'react-responsive'
 
 import { Element } from "react-scroll";
+import ScrollToTop from '../bunkandbeyond/components/ScrollToTop/ScrollToTop'
 
 export default function RoomDetails() {
     const isMobile = useMediaQuery({ query: '(max-width: 800px)' })
   return (
+    <ScrollToTop>
     <div>
       {isMobile ?<MobileHeader /> : <Header />}  
       <Banner />
@@ -21,5 +23,6 @@ export default function RoomDetails() {
 
       <Footer />
     </div>
+    </ScrollToTop>
   )
 }

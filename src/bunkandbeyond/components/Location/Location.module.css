@@ -4,8 +4,9 @@
     background-color: white;
   }
   
-  .title {
-    font-size: 38px;
+  .loc {
+    font-family: Montserrat;
+    font-size: 35px;
     text-align: center;
     color: #000;
     margin-bottom: 10px;

@@ -3,10 +3,12 @@ import Icon from '../../assets/icon/bnb.png';
 import whatsapp from '../../assets/roomdetails/banner/whatsappicon.png';
 import instagram from '../../assets/roomdetails/banner/instagram.png';
 
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 
 const Footer = () => {
+
+  const navigate = useNavigate()
 
   const whatsappNumber = 8309047176
 
@@ -14,7 +16,9 @@ const Footer = () => {
     <footer className={styles.footer}>
       <div className={styles.container}>
         <div className={styles.logo}>
-          <img src={Icon} alt="Bunk Beyond Logo" />
+          
+          <img onClick={()=>navigate('/')} src={Icon} alt="Bunk Beyond Logo" />
+          
           {/* <p className={styles.tagline}>YOUR HOME AWAY FROM HOME</p> */}
         </div>
         <div className={styles.contact}>
