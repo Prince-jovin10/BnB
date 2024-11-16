@@ -10,13 +10,15 @@ import Location from '../bunkandbeyond/components/Location/Location'
 import Footer from '../bunkandbeyond/components/Footer/Footer'
 import MobileHeader from '../bunkandbeyond/components/MobileHeader/MobileHeader'
 import { useMediaQuery } from 'react-responsive'
+import Style from './Home.module.css'
+
 
 const Home = () => {
 
     const isMobile = useMediaQuery({ query: '(max-width: 800px)' })
 
   return (
-    <div>
+    <div className={Style.main}>
      {isMobile ?<MobileHeader/> :  <Header />}
       <BannerSection/>
       <AboutUs/> 
