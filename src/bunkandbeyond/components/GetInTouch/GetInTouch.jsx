@@ -2,17 +2,24 @@ import React, { useState } from 'react';
 import styles from './GetInTouch.module.css';
 import Background from '../../assets/form/background.png';
 
+import "react-phone-input-2/lib/style.css";
+import PhoneInput from "react-phone-input-2";
+
 import axios from 'axios'
 
 
 const GetInTouch = () => {
 
+  const URL = `https://apitest.fracspace.com/api/v1/webApi/enquiryFormForBunkAndBeyond`
+
   const initialFormData = {
     firstName:"",
     lastName:"",
     email:"",
-    phone:"",
+    phoneNumber:"",
     message:"",
+    contact:"",
+    countryCode:"",
     agreeTerms:false
   }
 
@@ -22,17 +29,30 @@ const GetInTouch = () => {
 
   const submitContactDetails = async () => {
     try {
-      // const response = await axios.post(URL, formData, {
-      //   headers: {
-      //     "Content-Type": "application/json",
-      //     "x-api-key": "Fracspace@2024"
-      //   }
-      // });
-      // console.log(response.data);
+      const response = await axios.post(URL, formData, {
+        headers: {
+          "Content-Type": "application/json",
+          "x-api-key": "Fracspace@2024"
+        }
+      });
+      console.log("response is",response,response?.data);
       console.log("success", formData)
     } catch (error) {
       console.log("error is", error);
     }
+  };
+
+  const handlePhoneChange = (value, country) => {
+    const countryCode = country.dialCode;
+    const phone = value.slice(country.dialCode.length);
+    // console.log("phone num is", phone);
+
+    setFormData({
+      ...formData,
+      contact: "+" + value,
+      countryCode: "+" + countryCode,
+      phoneNumber: phone
+    });
   };
 
   const handleChange = (e) =>{
@@ -49,7 +69,11 @@ const GetInTouch = () => {
 
 
     // Handle form submission
-
+   
+    if (!formData.contact) {
+      alert("Contact is required");
+      return;
+    }
    
     if (!formData.agreeTerms) {
       alert("Please click the checkbox to confirm that Fracspace can contact you before submitting your details.");
@@ -95,7 +119,20 @@ const GetInTouch = () => {
             <input required  name="email" type="email" value={formData?.email} placeholder="Email" onChange={handleChange} />
           </div>
           <div className={styles.inputGroupPhone}>
-            <input required  name="phone" type="tel" value={formData?.phone} placeholder="Phone Number" onChange={handleChange} />
+          <PhoneInput
+                  country={"in"}
+                  value={formData.contact}
+                  onChange={handlePhoneChange}
+                  inputStyle={{
+                    width: "100%",
+                    height: "6vh",
+                    fontSize: "1rem"
+                  }}
+                  // inputStyle={Style.phoneInput}
+                  required
+                  className={styles.formControl}
+                />
+            {/* <input required  name="phoneNumber" type="tel" value={formData?.phoneNumber} placeholder="Phone Number" onChange={handleChange} /> */}
           </div>
           <div className={styles.inputGroupMessage}>
             <textarea required  name="message" value={formData?.message} placeholder="Message"  onChange={handleChange}/>

@@ -2,8 +2,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  
   min-height: 100vh;
-  background: url('../../assets/form/background.png') no-repeat center center / cover;
+  background-image: url('../../assets/form/background.png');
   padding: 20px;
   position: relative;
 }
@@ -44,6 +45,10 @@ p {
 
 .inputGroupName1 {
   margin-right: 15px;
+}
+
+.inputGroupMessage{
+  margin-top: 1vh;
 }
 
 input[type="text"],
